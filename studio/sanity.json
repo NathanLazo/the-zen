@@ -1,11 +1,11 @@
 {
   "root": true,
+  "project": {
+    "name": "the-zen"
+  },
   "api": {
     "projectId": "09gzqrfu",
     "dataset": "production"
-  },
-  "project": {
-    "name": "the-zen"
   },
   "plugins": [
     "@sanity/base",
