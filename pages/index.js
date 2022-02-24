@@ -9,9 +9,11 @@ import { CgColorBucket } from 'react-icons/cg';
 
 const style = {
   wrapper: ``,
-  walletConnectWrapper: `flex flex-col justify-center items-center h-screen w-screen bg-[#3b3d42] `,
-  button: `border border-[#282b2f] bg-[#2081e2] p-[0.8rem] text-xl font-semibold rounded-lg cursor-pointer text-black`,
-  details: `text-lg text-center text=[#282b2f] font-semibold mt-4`,
+  buttons: `inline-flex justify-center items-center`,
+  walletConnectWrapper: `inline-flex flex-col justify-center items-center h-screen w-screen bg-[url('../assets/background.jpg')] `,
+  button: `bg-[#604D9B] p-[0.8rem] mr-10 text-xl font-semibold rounded-lg cursor-pointer text-white `,
+  buttonM: `bg-[#604D9B] p-[0.8rem] text-xl font-semibold rounded-lg cursor-pointer text-white`,
+  details: `text-lg text-center text=[#282b2f] font-bold mt-4 text-white`,
 }
 
 export default function Home() {
@@ -53,11 +55,18 @@ export default function Home() {
     </>
       ) : (
         <div className={style.walletConnectWrapper}>
+          <div className={style.buttons}>
           <button className={style.button} onClick={() => connectWallet('injected')}>
             Connect Wallet
           </button>
+          <div className={style.buttonM} onClick={() => {
+            window.open('https://metamask.io/');
+          }}> 
+            Download Metamask
+          </div>
+          </div>
           <div className={style.details}>
-            You need to connect your wallet to view The Zen Marketplace
+            You need to connect your wallet to view The Zen Marketplace.
           </div>
         </div>
       )}
