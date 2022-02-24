@@ -3,6 +3,9 @@ import { useEffect } from 'react';
 import Image from 'next/image';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
+import { client } from '../lib/sanityClient';
+import toast, { Toaster } from 'react-hot-toast';
+import { CgColorBucket } from 'react-icons/cg';
 
 const style = {
   wrapper: ``,
@@ -14,8 +17,20 @@ const style = {
 export default function Home() {
   const { address, connectWallet} = useWeb3();
 
+  const welcomeUser = (userName, toastHAndler =  toast) =>{
+    toastHAndler.success(
+      `Welcome back ${userName !== 'Unnamed' ? `${userName}` : ''}!`,
+        {
+        style: {
+          background: '#04111d',
+          color: '#fff',
+        },
+      }
+    )
+  }
+
   useEffect(() => {
-    if(!address)  return
+    if(!address) return
     ;(async () => {
       const userDoc = {
         _type: 'users',
@@ -24,11 +39,13 @@ export default function Home() {
         walletAddress: address,
       }
 
-      const res = await client.createIfNotExists(userDoc)
+      const res = await client.createIfNotExists(userDoc);
+      welcomeUser(res.userName);
     })()
   }, [address]);
   return (
     <div className={style.wrapper}>
+    <Toaster position='top-center' reverseOrder={false}/>
       {address ? (
     <>
     <Header/>

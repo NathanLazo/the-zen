@@ -1,8 +1,11 @@
 import React from "react";
 
+const bgImg = 'https://drive.google.com/file/d/17J-7nOLWokyxqiDQB7SG_GsqCza59fTP/view?usp=sharing';
+
 const style = {
+    bgImg: `rounded-t-lg bg-[url('${bgImg})']`,
     wrapper: `relative`,
-    container: `before:content-[''] before:bg-[#5c4494] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://gateway.pinata.cloud/ipfs/QmSbCwHotYtGT9ebMZWRAyUag1G5nBpWGDGNtdakjKfU3H')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
+    container: `before:content-[''] before:bg-[#5c4494] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('${bgImg})'] before:bg-cover before:bg-center before:opacity-30 before:blur`,
     contentWrapper: `flex h-screen relative justify-center flex-wrap items-center`,
     copyContainer: `w-1/2`,
     title: `relative text-white text-[46px] font-semibold`,
@@ -10,7 +13,7 @@ const style = {
     ctaContainer: `flex`,
     accentedButton: ` relative text-lg font-semibold px-12 py-4 bg-[#2181e2] rounded-lg mr-5 text-white hover:bg-[#42a0ff] cursor-pointer`,
     button: ` relative text-lg font-semibold px-12 py-4 bg-[#363840] rounded-lg mr-5 text-[#e4e8ea] hover:bg-[#4c505c] cursor-pointer`,
-    cardContainer: `rounded-[3rem]`,
+    cardContainer: `rounded-[3rem] mt-[2rem]`,
     infoContainer: `h-20 bg-[#313338] p-4 rounded-b-lg flex items-center text-white`,
     author: `flex flex-col justify-center ml-4`,
     name: ``,
@@ -36,8 +39,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className={style.cardContainer}>
-                        <img className="rounded-t-lg" 
-                        src="https://gateway.pinata.cloud/ipfs/QmdbceY1JHsRjKZJ7htppPCMxktK4Sb7FSfdgWssUPbisw" 
+                        <img className={style.bgImg}
                         alt="NFT"
                         />
                         <div className={style.infoContainer}>
