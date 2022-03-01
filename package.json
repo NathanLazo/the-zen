@@ -11,6 +11,8 @@
   "dependencies": {
     "@3rdweb/hooks": "^1.9.2",
     "@3rdweb/sdk": "^1.41.2",
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.5",
     "@sanity/cli": "^2.27.0",
     "@sanity/client": "^3.1.0",
     "async-mutex": "^0.3.2",

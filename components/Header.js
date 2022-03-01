@@ -7,7 +7,7 @@ import  { CgProfile } from 'react-icons/cg';
 import { MdOutlineAccountBalanceWallet } from 'react-icons/md';
 import theZenLogo from '../assets/TheZen3.png';
 import { client } from '../lib/sanityClient';
-import { useWeb3 } from '@3rdweb/hooks';
+import DropdownMenu from '../components/DropdownMenu';
 
 const style = {
     wrapper: `bg-[#04111d] w-screen px-[1.2rem] py-[0.8rem] flex `,
@@ -49,11 +49,9 @@ const Header = () => {
                 <Link href="/">
                     <div className={style.headerItem}>Create</div>
                 </Link>
-                <Link href='/user/0x83d39e9781d1d3C3f233597b8762126A113e0a25'>
                 <div className={style.headerIcon}>
-                    <CgProfile />
+                    <DropdownMenu/>
                 </div>
-                </Link>
                 <div className={style.headerIcon}>
                     <MdOutlineAccountBalanceWallet />
                 </div>

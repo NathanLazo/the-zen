@@ -25,6 +25,23 @@ const UserConfig = () => {
         fetch()
     },[userId])
     console.log(userData[0]);
+
+
+    client
+  .patch(`${userId}`) // Document ID to patch
+  .set({userName: 'Jorge'}) //merge of document
+  .commit() // Perform the patch and return a promise
+  .then((updatedUser) => {
+    console.log('Updated')
+    console.log(updatedUser)
+  })
+  .catch((err) => {
+    console.error('Oh no, the update failed: ', err.message)
+  })
+
+
+
+
     return (
         <h1 className="text-white" >
             {userId} 
@@ -38,17 +55,14 @@ const UserConfig = () => {
             ? userData[0].profileImg
             : "User"}
             <br/>
-            
             {userData[0]?.instagram
             ? userData[0].instagram
             : "User"}
             <br/>
-            Hi
             {userData[0]?.bannerImg
             ? userData[0].bannerImg
             : "User"}
             <br/>
-            Hi
             {userData[0]?.twitter
             ? userData[0].twitter
             : "User"}

@@ -45,6 +45,7 @@ export default function Home() {
       welcomeUser(res.userName);
     })()
   }, [address]);
+
   return (
     <div className={style.wrapper}>
     <Toaster position='top-center' reverseOrder={false}/>
