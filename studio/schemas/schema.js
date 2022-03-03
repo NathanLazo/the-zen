@@ -24,16 +24,6 @@ export default createSchema({
           type: 'string',
         },
         {
-          name: 'profileImage',
-          title: 'Profile Image',
-          type: 'image',
-        },
-        {
-          name: 'bannerImage',
-          title: 'Banner Image',
-          type: 'image',
-        },
-        {
           name: 'twitterHandle',
           title: 'Twitter Handle',
           type: 'string',

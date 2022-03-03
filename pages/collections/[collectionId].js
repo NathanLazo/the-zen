@@ -19,8 +19,8 @@ const style = {
     profileImg: `w-40 h-40 object-cover rounded-full border-2 border-[#202225] mt-[-4rem]`,
     socialIconsContainer: `flex text-3xl mb-[-2rem]`,
     socialIconsWrapper: `w-44`,
-    socialIconsContent: `flex container justify-between text-[1.4rem] border-2 rounded-lg px-2`,
-    socialIcon: `my-2`,
+    socialIconsContent: `flex container justify-between text-[1.4rem] border-2 rounded-lg px-2 `,
+    socialIcon: `my-2 hover:text-[#6d3ff8]`,
     divider: `border-r-2`,
     title: `text-5xl font-bold mb-4`,
     createdBy: `text-lg mb-4`,
@@ -93,13 +93,11 @@ const Collection = ()=>{
              createdBy,
              contractAddress,
              "creator": createdBy->userName,
-             title, floorprice,
+             title, floorPrice,
              "allOwners": owners[]->,
              description
            }`
         const collectionData =  await SanityClient.fetch(query);
-
-        console.log(collectionData)
 
 
         await setCollection(collectionData[0]);
@@ -108,6 +106,7 @@ const Collection = ()=>{
     useEffect(()=>{
         fetchCollectionData()
     },[collectionId])
+
 
     return (
         <div className="overflow-hidden">
@@ -143,9 +142,11 @@ const Collection = ()=>{
                   <CgWebsite />
                 </div>
                 <div className={style.divider} />
+                <Link href='https://www.instagram.com/the_zen_corp/'>
                 <div className={style.socialIcon}>
-                  <AiOutlineInstagram />
+                    <AiOutlineInstagram />
                 </div>
+                </Link>
                 <div className={style.divider} />
                 <div className={style.socialIcon}>
                   <AiOutlineTwitter />
@@ -197,7 +198,7 @@ const Collection = ()=>{
                   alt="eth"
                   className={style.ethLogo}
                 />
-                {collection?.volumeTraded}.5K
+                {collection?.volumeTraded}.01
               </div>
               <div className={style.statName}>volume traded</div>
             </div>

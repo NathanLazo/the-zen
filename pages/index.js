@@ -6,6 +6,8 @@ import Hero from '../components/Hero';
 import { client } from '../lib/sanityClient';
 import toast, { Toaster } from 'react-hot-toast';
 import { CgColorBucket } from 'react-icons/cg';
+import AboutUs from '../components/aboutUs';
+
 
 const style = {
   wrapper: ``,
@@ -53,6 +55,7 @@ export default function Home() {
     <>
     <Header/>
     <Hero/>
+    <AboutUs/>
     </>
       ) : (
         <div className={style.walletConnectWrapper}>
