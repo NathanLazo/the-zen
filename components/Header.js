@@ -7,7 +7,7 @@ import  { CgProfile } from 'react-icons/cg';
 import { MdOutlineAccountBalanceWallet } from 'react-icons/md';
 import theZenLogo from '../assets/TheZen3.png';
 import { client } from '../lib/sanityClient';
-import DropdownMenu from '../components/DropdownMenu';
+import DropdownMenu from './DropdownMenu';
 
 const style = {
     wrapper: `bg-[#04111d] w-screen px-[1.2rem] py-[0.8rem] flex `,
