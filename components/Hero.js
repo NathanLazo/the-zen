@@ -9,7 +9,7 @@ const style = {
     copyContainer: `w-1/2`,
     title: `relative text-white text-[46px] font-semibold`,
     description: `text-[#8a939b] container-[400px] text-2xl mt-[0.8rem] mb-[2.5rem]`,
-    ctaContainer: `flex`,
+    ctaContainer: `flex sm:items-center sm:justify-center md:justify-start`,
     accentedButton: ` relative text-lg font-semibold px-12 py-4 bg-[#604D9B] rounded-lg mr-5 text-white hover:bg-[#44356f] cursor-pointer`,
     button: ` relative text-lg font-semibold px-12 py-4 bg-[#363840] rounded-lg mr-5 text-[#e4e8ea] hover:bg-[#4c505c] cursor-pointer`,
     cardContainer: `rounded-[3rem] mt-[2rem] sm:hidden md:hidden lg:block`,

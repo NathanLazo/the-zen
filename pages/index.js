@@ -7,6 +7,7 @@ import { client } from '../lib/sanityClient';
 import toast, { Toaster } from 'react-hot-toast';
 import { CgColorBucket } from 'react-icons/cg';
 import AboutUs from '../components/aboutUs';
+import Footer from '../components/Footer';
 
 
 const style = {
@@ -56,6 +57,7 @@ export default function Home() {
     <Header/>
     <Hero/>
     <AboutUs/>
+    <Footer/>
     </>
       ) : (
         <div className={style.walletConnectWrapper}>
