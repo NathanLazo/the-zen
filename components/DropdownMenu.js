@@ -1,6 +1,5 @@
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
 import { CgProfile } from 'react-icons/cg'
 import Link from 'next/link';
 import { useWeb3 } from '@3rdweb/hooks';
@@ -14,10 +13,8 @@ export default function Example() {
   return (
     <Menu as="div" className="z-10 relative inline-block text-left">
       <div>
-          
         <Menu.Button className="inline-flex justify-center w-full rounded-md shadow-sm py-2 bg-transparent font-medium text-[#c8cacd] hover:text-white ">
         <CgProfile/>
-          
         </Menu.Button>
       </div>
 

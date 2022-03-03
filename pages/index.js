@@ -1,17 +1,15 @@
 import { useWeb3 } from '@3rdweb/hooks';
 import { useEffect } from 'react';
-import Image from 'next/image';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import { client } from '../lib/sanityClient';
 import toast, { Toaster } from 'react-hot-toast';
-import { CgColorBucket } from 'react-icons/cg';
 import AboutUs from '../components/aboutUs';
 import Footer from '../components/Footer';
 
 
 const style = {
-  wrapper: ``,
+  wrapper: `overflow-hidden`,
   buttons: `inline-flex justify-center items-center`,
   walletConnectWrapper: `inline-flex flex-col justify-center items-center h-screen w-screen bg-[url('../assets/background.jpg')] `,
   button: `bg-[#604D9B] p-[0.8rem] mr-10 text-xl font-semibold rounded-lg cursor-pointer text-white `,

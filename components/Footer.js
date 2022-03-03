@@ -1,17 +1,16 @@
 import React from "react";
-import { Fragment } from 'react'
 
 const Footer = () => {
     
     return (
 <>
-<footer className="z-20 flex justify-center items-end bg-[#04111d] text-white mb-auto "> 
+<footer className="z-20 flex justify-center items-end bg-transparent text-white mb-auto "> 
 
   <div className="container px-6 pt-6 ">
 
     <div className="flex justify-center mb-10">
 
-      <a href="#!" type="button" className="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1 ">
+      <a href="#!" type="button" className="rounded-full border-2 border-white text-white leading-normal bg-[#6d3ff8] uppercase hover:bg-transparent hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1 ">
         <svg aria-hidden="true"
         focusable="false"
         dataprefix="fab"
@@ -28,7 +27,7 @@ const Footer = () => {
         </svg>
       </a>
 
-      <a href="#!" type="button" className="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+      <a href="#!" type="button" className="rounded-full border-2 border-white text-white leading-normal bg-[#6d3ff8] uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
         <svg aria-hidden="true"
         focusable="false"
         dataprefix="fab"
@@ -45,7 +44,7 @@ const Footer = () => {
         </svg>
       </a>
 
-      <a href="#!" type="button" className="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+      <a href="#!" type="button" className="rounded-full border-2 border-white text-white leading-normal bg-[#6d3ff8] uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
         <svg aria-hidden="true"
         focusable="false"
         dataprefix="fab"
@@ -62,30 +61,31 @@ const Footer = () => {
         </svg>
       </a>
     </div>
-    <div className="mb-6">
+    <div className="mb-6 text-center">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      The Zen is a completely decentralized virtual world that seeks to hand over control to the people who create and play.
       </p>
     </div>
 
-    <div className="grid grid-cols-2 gap-4">
-      <div className="mb-6">
-        <h5 className="uppercase font-bold mb-2.5">Links</h5>
+    <div className="flex justify-center justify-evenly">
+      <div className="justify-evenly mb-6">
+        <h5 className=" uppercase font-bold mb-2.5">Resources</h5>
 
         <ul className="list-none mb-0">
-          <li>
-            <a href="#!" className="text-white">Link 1</a>
+          <li className="mb-2.5">
+            <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">About</a>
           </li>
-          <li>
-            <a href="#!" className="text-white">Link 2</a>
+          <li className="mb-2.5">
+            <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">FAQ</a>
           </li>
-          <li>
-            <a href="#!" className="text-white">Link 3</a>
+          <li className="mb-2.5">
+            <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">Blog</a>
           </li>
-          <li>
-            <a href="#!" className="text-white">Link 4</a>
+          <li className="mb-2.5">
+            <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">Newsletter</a>
+          </li>
+          <li className="mb-2.5">
+            <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">Home</a>
           </li>
         </ul>
       </div>
@@ -94,18 +94,13 @@ const Footer = () => {
         <h5 className="uppercase font-bold mb-2.5">Links</h5>
 
         <ul className="list-none mb-0">
-          <li>
-            <a href="#!" className="text-white">Link 1</a>
+          <li className="mb-2.5">
+            <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] ">Help center</a>
           </li>
-          <li>
-            <a href="#!" className="text-white">Link 2</a>
+          <li className="mb-2.5">
+            <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">Partners</a>
           </li>
-          <li>
-            <a href="#!" className="text-white">Link 3</a>
-          </li>
-          <li>
-            <a href="#!" className="text-white">Link 4</a>
-          </li>
+        
         </ul>
       </div>
 
