@@ -31,7 +31,7 @@ const Nft = () => {
             provider.getSigner(),
             'https://eth-rinkeby.alchemyapi.io/v2/WWZWSkv5blIqaD3JQpq61xXM1EdCLixv'
         )
-        return sdk.getNFTModule('0xAFaB5a1E8a2FB06A54F4C962c7079d3B5ddA57dD')
+        return sdk.getNFTModule('0xE9cEC25c3ba4f9Cc4930C2432BB9fC7C23B323Db')
     }, [provider]);
 
     useEffect(()=>{
@@ -53,7 +53,7 @@ const Nft = () => {
             'https://eth-rinkeby.alchemyapi.io/v2/WWZWSkv5blIqaD3JQpq61xXM1EdCLixv'
         )
         return sdk.getMarketplaceModule(
-            '0xe640815cEe53CA0e7fF8cB6c6B499B3B9becC498'
+            '0xA73a954721311c5dFac3E5D8558D2adCB71380a5'
         )
     },[provider]);
 

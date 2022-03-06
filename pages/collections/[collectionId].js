@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { client } from '../../lib/sanityClient'
 import Header from "../../components/Header";
-import { CgWebsite } from 'react-icons/cg'
+import { CgWebsite } from 'react-icons/cg';
 import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { HiDotsVertical } from 'react-icons/hi';
 import NFTCard from "../../components/NFTCard";
@@ -72,7 +72,7 @@ const Collection = ()=>{
             'https://eth-rinkeby.alchemyapi.io/v2/WWZWSkv5blIqaD3JQpq61xXM1EdCLixv'
         )
         return sdk.getMarketplaceModule(
-            '0xe640815cEe53CA0e7fF8cB6c6B499B3B9becC498'
+            '0xA73a954721311c5dFac3E5D8558D2adCB71380a5'
         )
     },[provider]);
 
