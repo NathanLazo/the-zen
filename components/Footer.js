@@ -1,4 +1,6 @@
 import React from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Footer = () => {
     
@@ -73,7 +75,9 @@ const Footer = () => {
 
         <ul className="list-none mb-0">
           <li className="mb-2.5">
-            <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">About</a>
+            <Link href="about">
+            <a  className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">About</a>
+            </Link>
           </li>
           <li className="mb-2.5">
             <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">FAQ</a>
@@ -85,7 +89,10 @@ const Footer = () => {
             <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">Newsletter</a>
           </li>
           <li className="mb-2.5">
-            <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">Home</a>
+            <Link href="/">
+              <a className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">Home</a>
+            </Link>
+            
           </li>
         </ul>
       </div>

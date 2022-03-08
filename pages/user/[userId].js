@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Header from "../../components/Header";
 import toast, { Toaster } from 'react-hot-toast';
 import Separator from '../../components/additives/Separator';
+import Footer from "../../components/Footer";
 
 
 const UserConfig = () => {
@@ -169,6 +170,7 @@ const UserConfig = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
     );
 }

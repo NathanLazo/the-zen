@@ -9,6 +9,7 @@ import { CgWebsite } from 'react-icons/cg';
 import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { HiDotsVertical } from 'react-icons/hi';
 import NFTCard from "../../components/NFTCard";
+import Footer from "../../components/Footer";
 
 const style = {
     bannerImageContainer: `h-[50vh] w-screen overflow-hidden flex justify-center items-center`,
@@ -109,6 +110,7 @@ const Collection = ()=>{
 
 
     return (
+      <>
         <div className="overflow-hidden">
       <Header />
       <div className={style.bannerImageContainer}>
@@ -187,7 +189,7 @@ const Collection = ()=>{
                   alt="eth"
                   className={style.ethLogo}
                 />
-                {collection?.floorPrice}
+                {collection?.floorPrice}.01
               </div>
               <div className={style.statName}>floor price</div>
             </div>
@@ -218,7 +220,9 @@ const Collection = ()=>{
           />
         ))}
       </div>
+      <Footer/>
     </div>
+    </>
     )
 }
 
