@@ -25,7 +25,7 @@ const AboutComponent = () => {
                         But, why do we do this? We want to deliver an experience
                         that is simple, fast, and secure. We want to take to every single
                         person on the planet a chance to own their information, their assets, 
-                        and to have their freedom back, we don't want any more corporations handling 
+                        and to have their freedom back, we don’t want any more corporations handling 
                         people's information, so blockchain gives us the tools to deliver this decentralized
                         and anonymous experience to our users.
 
