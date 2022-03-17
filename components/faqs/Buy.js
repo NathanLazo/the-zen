@@ -27,7 +27,7 @@ const BuyComponent = () => {
             </p>
             <Separator/>
             <p className="text-xl">
-            Once you have selected the NFT you want to buy, click the `&quot;`Buy`&quot;` button, a Smart contract will be deployed 
+            Once you have selected the NFT you want to buy, click the &quot;Buy&quot; button, a Smart contract will be deployed 
             to the blockchain, and the NFT will be added to your wallet.
             </p>
         </div>

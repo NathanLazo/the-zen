@@ -20,7 +20,7 @@ const BuyComponent = () => {
             </p>
             <Separator/>
             <p className="text-xl">
-            Once your select the NFT you want to sell, click the `&quot;`List`&quot;` button
+            Once your select the NFT you want to sell, click the &quot;List&quot; button
             </p>
             <Separator/>
             <p className="text-xl">

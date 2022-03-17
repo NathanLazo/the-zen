@@ -28,7 +28,6 @@ const AboutComponent = () => {
                         and to have their freedom back, we don’t want any more corporations handling 
                         people’s information, so blockchain gives us the tools to deliver this decentralized
                         and anonymous experience to our users.
-
                      </p>
                 </div>
                 

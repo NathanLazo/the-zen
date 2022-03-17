@@ -5,7 +5,7 @@ import Separator from "../../components/additives/Separator";
 const Faqs = () => {
     return (
     <>
-    <div className="relative bg-white overflow-hidden h-max">
+    <div className="relative bg-white overflow-hidden h-screen">
       <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
         <div className="sm:mx-[4rem] lg:mx-[30rem]">
             <h1 className="font-bold text-4xl">FAQ</h1>
