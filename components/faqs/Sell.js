@@ -15,12 +15,12 @@ const BuyComponent = () => {
                 <h1 className="font-bold text-4xl inline-block align-baseline pt-2">Sell</h1>
             </div>
             <p className="text-xl">
-            To sell your NFTs, first you need to list your NFT again in the network by going to the <a href="/collections/0xE9cEC25c3ba4f9Cc4930C2432BB9fC7C23B323Db" className="text-sky-500">Collection</a> page,
+            To sell your NFTs, first you need to list your NFT again in the network by going to the <Link href="/collections/0xE9cEC25c3ba4f9Cc4930C2432BB9fC7C23B323Db" className="text-sky-500">Collection</Link> page,
             and selecting the NFT you want to sell.
             </p>
             <Separator/>
             <p className="text-xl">
-            Once your select the NFT you want to sell, click the "List" button
+            Once your select the NFT you want to sell, click the `&quot;`List`&quot;` button
             </p>
             <Separator/>
             <p className="text-xl">
