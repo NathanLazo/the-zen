@@ -28,11 +28,11 @@ const features = [
   },
 ]
 
-export default function Example() {
+export default function AboutUs() {
   return (
-    <div className="py-12 bg-[#313338] z-50 shadow-xl">
+    <div className="bg-[#313338] z-50 shadow-xl py-[10rem]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
+        <div className="lg:text-center pb-8">
           <br/>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
             A better way to interact with blockchain

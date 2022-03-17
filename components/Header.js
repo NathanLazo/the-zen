@@ -41,15 +41,15 @@ const Header = () => {
                 <Link href="/collections/0xE9cEC25c3ba4f9Cc4930C2432BB9fC7C23B323Db">
                     <div className={style.headerItem1}>Collection</div>
                 </Link>
-                <Link href="/">
+                {/* <Link href="/">
                     <div className={style.headerItem2}>Stats</div>
-                </Link>
+                </Link> */}
                 <Link href="/">
-                    <div className={style.headerItem3}>Resources</div>
+                    <div className={style.headerItem3}>Metaverse</div>
                 </Link>
-                <Link href="/">
+                {/* <Link href="/">
                     <div className={style.headerItem4}>Create</div>
-                </Link>
+                </Link> */}
                 <div className={style.headerIconD}>
                     <DropdownMenu/>
                 </div>

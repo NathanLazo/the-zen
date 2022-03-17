@@ -33,7 +33,7 @@ const Hero = () => {
                             The Zen is a decentralized and digital world.
                         </div>
                         <div className={style.ctaContainer}>
-                            <button className={style.accentedButton}>Explore</button>
+                            <a href="/collections/0xE9cEC25c3ba4f9Cc4930C2432BB9fC7C23B323Db" className={style.accentedButton}>Explore</a>
                             <button className={style.button}>Create</button>
                         </div>
                     </div>

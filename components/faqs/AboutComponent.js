@@ -7,7 +7,7 @@ const AboutComponent = () => {
         <>
         <div className="sm:ml-8 sm:justify-center md:justify-between md:mx-10 mt-[5rem]">
             <div className="flex text-white ">
-                <div className="pr-8">
+                <div className="pr-8 ">
                      <h1 className="text-5xl font-bold">Join this decentralized economy</h1>
                      <p className="text-gray-300 text-xl text-justify mt-6">
                         In The Zen we work to deliver the best product to our
@@ -31,8 +31,8 @@ const AboutComponent = () => {
 
                      </p>
                 </div>
-               
-                <img className="sm:hidden md:block w-[60%] h-[60%]" src="https://gateway.pinata.cloud/ipfs/QmduwnuQj4k7s4x7pqhWrhwpVcLtAY8zVuBYbmykUTS9ny" />
+                
+                <img className="sm:hidden md:block w-[50%] h-[50%]" src="https://gateway.pinata.cloud/ipfs/QmduwnuQj4k7s4x7pqhWrhwpVcLtAY8zVuBYbmykUTS9ny" />
             </div>
         </div>
         </>

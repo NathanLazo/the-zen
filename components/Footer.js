@@ -75,18 +75,19 @@ const Footer = () => {
 
         <ul className="list-none mb-0">
           <li className="mb-2.5">
-            <Link href="about">
+            <Link href="/about">
             <a  className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">About</a>
             </Link>
           </li>
           <li className="mb-2.5">
-            <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">FAQ</a>
+            <Link href="/user-info/faqs">
+            <a className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">FAQ</a>
+            </Link>
           </li>
           <li className="mb-2.5">
-            <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">Blog</a>
-          </li>
-          <li className="mb-2.5">
-            <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">Newsletter</a>
+            <Link href="/blog" >
+            <a className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">Blog</a>
+            </Link>
           </li>
           <li className="mb-2.5">
             <Link href="/">
@@ -102,9 +103,11 @@ const Footer = () => {
 
         <ul className="list-none mb-0">
           <li className="mb-2.5">
-            <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] ">Help center</a>
+            <Link href="/help-center">
+            <a className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] ">Help center</a>
+            </Link>
           </li>
-          <li className="mb-2.5">
+          <li className="mb-2.5 ">
             <a href="#!" className="text-white hover:text-white hover:underline hover:decoration-[#6d3ff8] hover:text-[1.05rem]">Partners</a>
           </li>
         

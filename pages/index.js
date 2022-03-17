@@ -4,8 +4,9 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import { client } from '../lib/sanityClient';
 import toast, { Toaster } from 'react-hot-toast';
-import AboutUs from '../components/aboutUs';
+import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
+import PromoCollection from '../components/PromoCollection';
 
 
 const style = {
@@ -55,6 +56,7 @@ export default function Home() {
     <Header/>
     <Hero/>
     <AboutUs/>
+    <PromoCollection/>
     <Footer/>
     </>
       ) : (

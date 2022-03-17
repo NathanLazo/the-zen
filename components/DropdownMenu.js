@@ -77,11 +77,11 @@ export default function Example() {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Archive
+                  My collection
                 </a>
               )}
             </Menu.Item>
-            <Menu.Item>
+            {/* <Menu.Item>
               {({ active }) => (
                 <a
                   href="#"
@@ -93,9 +93,9 @@ export default function Example() {
                   Move
                 </a>
               )}
-            </Menu.Item>
+            </Menu.Item> */}
           </div>
-          <div className="py-1">
+          {/* <div className="py-1">
             <Menu.Item>
               {({ active }) => (
                 <a
@@ -137,7 +137,7 @@ export default function Example() {
                 </a>
               )}
             </Menu.Item>
-          </div>
+          </div> */}
         </Menu.Items>
       </Transition>
     </Menu>
