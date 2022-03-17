@@ -16,7 +16,7 @@ const GetStarted = () => {
                     <br/>
                     <p className="text-xl font-light">An estimate for The Zen collection of the floor price was made by the time making these personal NFTs</p>
                     <br/>
-                    <div class="flex flex-col text-xl font-normal ">
+                    <div className="flex flex-col text-xl font-normal ">
                         <p className="pb-2 flex">
                             <CashIcon className="w-8 mr-2"/>
                             Right now the floor price is 0.018 ETH

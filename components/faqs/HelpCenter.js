@@ -5,7 +5,7 @@ const HelpCenter = () => {
     return (
     <>
     <div className="sm:mx-2 lg:mx-[20rem] mt-20">
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 text-white text-center">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 text-white text-center">
             
             <Link href="/user-info/get-started"><a className="border-2 border-none bg-[#6d3ff8] rounded-md sm:py-0 md:py-[1rem]">
                 <h1 className="font-bold text-2xl pb-1">Get started</h1>

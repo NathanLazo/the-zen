@@ -17,12 +17,12 @@ const BuyComponent = () => {
             <p className="text-xl">
             The first steps are to create a metamask account, 
             or if you already have one, just connect with this website going to the 
-            <a href="/" className="text-sky-500"> Home</a> page, if nothing shows up, the wallet is successfully connected 
+            <Link href="/" className="text-sky-500"> Home</Link> page, if nothing shows up, the wallet is successfully connected 
             </p>
             <Separator/>
             <p className="text-xl">
             Once your metamask wallet is connected to this website,
-            you can easily buy NFT by going to the <a href="/collections/0xE9cEC25c3ba4f9Cc4930C2432BB9fC7C23B323Db" className="text-sky-500">Collection</a> page,
+            you can easily buy NFT by going to the <Link href="/collections/0xE9cEC25c3ba4f9Cc4930C2432BB9fC7C23B323Db" className="text-sky-500">Collection</Link> page,
             and selecting the NFT you want to buy.
             </p>
             <Separator/>

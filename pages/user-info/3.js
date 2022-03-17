@@ -15,7 +15,7 @@ const GetStarted = () => {
                     <br/>
                     <p className="text-xl font-light">We can all se Ethereum transactions, all you need to have is one of the following:</p>
                     <br/>
-                    <div class="flex flex-col text-xl font-normal ">
+                    <div className="flex flex-col text-xl font-normal ">
                         <p className="pb-2 flex">
                             Address
                         </p>
@@ -38,7 +38,7 @@ const GetStarted = () => {
                         <Separator/>
                         <br/>
                         <p className="text-xl font-light">
-                            Then you can access to: <a className="text-sky-500 hover:font-normal" href="https://etherscan.io" target="_blank">Etherscan.io</a> and see all the blocks, transactions, and more.
+                            Then you can access to: <a className="text-sky-500 hover:font-normal" href="https://etherscan.io" rel="noreferrer" target="_blank">Etherscan.io</a> and see all the blocks, transactions, and more.
                         </p>
                         <br/>
                     </div>

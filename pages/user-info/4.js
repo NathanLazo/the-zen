@@ -15,7 +15,7 @@ const GetStarted = () => {
                     <br/>
                     <p className="text-xl font-light">We are open to all content creator who wants to work with us</p>
                     <br/>
-                    <div class="flex flex-col text-xl font-normal ">
+                    <div className="flex flex-col text-xl font-normal ">
                         <p className="pb-2 flex">
                             You can contact us via our social media or email to talk in how we can integrate you in this company.
                         </p>

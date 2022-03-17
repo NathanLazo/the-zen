@@ -12,7 +12,7 @@ const Faqs = () => {
             <br/>
             <p className="text-xl font-light">Frequently asked questions made by our users</p>
             <br/>
-            <div class="flex flex-col text-xl font-medium ">
+            <div className="flex flex-col text-xl font-medium ">
               <Link href="/user-info/1">
               <div className="pb-2 hover:font-bold">Where you can contact us?</div>
               </Link>
