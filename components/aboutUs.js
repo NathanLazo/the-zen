@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { EyeOffIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline'
+import React from 'react';
+import { EyeOffIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline';
 
 const features = [
   {
@@ -28,7 +29,7 @@ const features = [
   },
 ]
 
-export default function AboutUs() {
+const AboutUs = () => {
   return (
     <div className="bg-[#313338] z-50 shadow-xl py-[10rem]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -61,3 +62,5 @@ export default function AboutUs() {
     </div>
   )
 }
+
+export default AboutUs;
