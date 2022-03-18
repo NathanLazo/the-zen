@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const style = {
     wrapper: `relative`,
-    container: `before:content-[''] before:bg-[#5c4494] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://gateway.pinata.cloud/ipfs/QmdTNB2ts8ZNGnafVqrmMFjNRCJUH8wmNMWnZuF7T3ccAz')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
+    container: `before:content-[''] before:bg-[#5c4494] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('../assets/the-zen-gallery/the-zen-3.png')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
     contentWrapper: `flex h-screen relative justify-center flex-wrap items-center`,
     copyContainer: `w-1/2`,
     title: `relative text-white text-[46px] font-semibold`,
@@ -12,8 +12,8 @@ const style = {
     ctaContainer: `flex sm:items-center sm:justify-center md:justify-start`,
     accentedButton: ` relative text-lg font-semibold px-12 py-4 bg-[#604D9B] rounded-lg mr-5 text-white hover:bg-[#44356f] cursor-pointer`,
     button: ` relative text-lg font-semibold px-12 py-4 bg-[#363840] rounded-lg mr-5 text-[#e4e8ea] hover:bg-[#4c505c] cursor-pointer`,
-    cardContainer: `rounded-[3rem] mt-[2rem] sm:hidden md:hidden lg:block`,
-    infoContainer: `h-20 bg-[#313338] p-4 rounded-b-lg flex items-center text-white`,
+    cardContainer: `rounded-[3rem] mt-[2rem] sm:hidden md:hidden lg:block border-transparent`,
+    infoContainer: `h-20 bg-[#313338] p-4 rounded-b-lg flex items-center text-white border-transparent`,
     author: `flex flex-col justify-center ml-4`,
     name: ``,
     infoIcon: `flex justify-end items-center flex-1 text-[#8a939b] text-3xl font-bold`,
@@ -40,8 +40,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className={style.cardContainer}>
-                        <img className="rounded-t-lg" 
-                        src="https://gateway.pinata.cloud/ipfs/QmdTNB2ts8ZNGnafVqrmMFjNRCJUH8wmNMWnZuF7T3ccAz" 
+                        <div className="rounded-t-2xl bg-[url('../assets/the-zen-gallery/the-zen-3.png')] bg-cover w-[800px] h-[800px] " 
                         alt="NFT"
                         />
                         <div className={style.infoContainer}>

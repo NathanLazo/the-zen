@@ -26,56 +26,49 @@ const PromoCollection = () => {
                   <div className="flex items-center space-x-6 lg:space-x-8">
                     <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="w-44 h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100">
-                        <img
-                          src="https://gateway.pinata.cloud/ipfs/QmdTNB2ts8ZNGnafVqrmMFjNRCJUH8wmNMWnZuF7T3ccAz"
+                        <div
                           alt=""
-                          className="w-full h-full object-center object-cover"
+                          className="w-full h-full object-center object-cover bg-[url('../assets/the-zen-gallery/the-zen-1.png')] bg-cover bg-center"
                         />
                       </div>
                       <div className="w-44 h-64 rounded-lg overflow-hidden">
-                        <img
-                          src="https://gateway.pinata.cloud/ipfs/QmTtMg5ApM6wkXHHUzrS3nbiGoJrk1kmNaReb4gM7eYLTc"
+                        <div
                           alt=""
-                          className="w-full h-full object-center object-cover"
-                        />
-                      </div>
-                    </div>
-                    <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
-                        <img
-                          src="https://gateway.pinata.cloud/ipfs/QmP2YbsRb6zraHuUBcC4DMqEhhydabhJ7wdMDcAS6nHk7P"
-                          alt=""
-                          className="w-full h-full object-center object-cover"
-                        />
-                      </div>
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
-                        <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/b/b7/ETHEREUM-YOUTUBE-PROFILE-PIC.png"
-                          alt=""
-                          className="w-full h-full object-center object-cover"
-                        />
-                      </div>
-                      <div className="w-44 h-64 rounded-lg overflow-hidden">
-                        <img
-                          src="https://gateway.pinata.cloud/ipfs/QmThxpqKhE6ASPELPmHKvmZrxfLAP7ffiHGmkgTH2dGaMk"
-                          alt=""
-                          className="w-full h-full object-center object-cover"
+                          className="w-full h-full object-center object-cover bg-[url('../assets/the-zen-gallery/the-zen-6.png')] bg-cover bg-center"
                         />
                       </div>
                     </div>
                     <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="w-44 h-64 rounded-lg overflow-hidden">
-                        <img
-                          src="https://gateway.pinata.cloud/ipfs/QmcoGUkoYtfUZF32HuDRXxjvLGZKoZMEhjYTjo7b3xx7zd"
+                        <div
                           alt=""
-                          className="w-full h-full object-center object-cover"
+                          className="w-full h-full object-center object-cover bg-[url('../assets/the-zen-gallery/the-zen-7.png')] bg-cover bg-center"
                         />
                       </div>
                       <div className="w-44 h-64 rounded-lg overflow-hidden">
-                        <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/b/b7/ETHEREUM-YOUTUBE-PROFILE-PIC.png"
+                        <div
                           alt=""
-                          className="w-full h-full object-center object-cover"
+                          className="w-full h-full object-center object-cover bg-[url('../assets/the-zen-gallery/the-zen-4.png')] bg-cover bg-center"
+                        />
+                      </div>
+                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                        <div
+                          alt=""
+                          className="w-full h-full object-center object-cover bg-[url('../assets/the-zen-gallery/the-zen-8.png')] bg-cover bg-center"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                        <div
+                          alt=""
+                          className="w-full h-full object-center object-cover bg-[url('../assets/the-zen-gallery/the-zen-5.png')] bg-cover bg-center"
+                        />
+                      </div>
+                      <div className="w-44 h-64 rounded-lg overflow-hidden">
+                        <div
+                          alt=""
+                          className="w-full h-full object-center object-cover bg-[url('../assets/the-zen-gallery/the-zen-3.png')] bg-cover bg-center"
                         />
                       </div>
                     </div>
