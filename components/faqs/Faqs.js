@@ -14,19 +14,19 @@ const Faqs = () => {
             <br/>
             <div className="flex flex-col text-xl font-medium ">
               <Link href="/user-info/1">
-              <div className="pb-2 hover:font-bold">Where you can contact us?</div>
+              <a className="pb-2 hover:font-bold">Where you can contact us?</a>
               </Link>
               <Separator/>
               <Link href="/user-info/2">
-              <div className="pb-2 hover:font-bold">What is the floor price?</div>
+              <a className="pb-2 hover:font-bold">What is the floor price?</a>
               </Link>
               <Separator/>
               <Link href="/user-info/3">
-              <div className="pb-2 hover:font-bold">Where can I see Ethereum transactions?</div>
+              <a className="pb-2 hover:font-bold">Where can I see Ethereum transactions?</a>
               </Link>
               <Separator/>
               <Link href="/user-info/4">
-              <div className="pb-2 hover:font-bold">How to collaborate with us?</div>
+              <a className="pb-2 hover:font-bold">How to collaborate with us?</a>
               </Link>
               <Separator/>
             </div>

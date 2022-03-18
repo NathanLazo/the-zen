@@ -69,7 +69,7 @@ const Footer = () => {
       </p>
     </div>
 
-    <div className="flex justify-center justify-evenly">
+    <div className="flex justify-evenly">
       <div className="justify-evenly mb-6">
         <h5 className=" uppercase font-bold mb-2.5">Resources</h5>
 
