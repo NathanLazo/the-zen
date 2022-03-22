@@ -29,8 +29,8 @@ export default function Example() {
       >
         <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
           <div className="py-1">
+            <Link href="/profile">
             <Menu.Item>
-
               {({ active }) => (
                 <a
                   href="#"
@@ -47,6 +47,7 @@ export default function Example() {
                 </a>
               )}
             </Menu.Item>
+            </Link>
             <Link href={`/user/${address}`}>
             <Menu.Item>
               {({ active }) => (
