@@ -78,21 +78,21 @@ const Collection = ()=>{
           <div className={style.socialIconsContainer}>
             <div className={style.socialIconsWrapper}>
               <div className={style.socialIconsContent}>
-                <Link href={instagram}>
-                    <div className={style.socialIcon}>
+                <Link href={instagram} >
+                    <a className={style.socialIcon} target="_blank">
                         <AiOutlineInstagram />
-                    </div>
+                    </a>
                 </Link>
                 <div className={style.divider} />
-                <div className={style.socialIcon}>
+                <Link href={twitter} >
+                <a className={style.socialIcon} target="_blank">
                   <AiOutlineTwitter />
-                </div>
+                </a>
+                </Link>
                 <div className={style.divider} />
-                <Link href={twitter}>
                     <div className={style.socialIcon}>
                         <HiDotsVertical />
                     </div>
-                </Link>
               </div>
             </div>
           </div>
