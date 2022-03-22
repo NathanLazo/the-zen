@@ -8,12 +8,12 @@ import { HiDotsVertical } from 'react-icons/hi';
 import Footer from "../components/Footer";
 
 const style = {
-    bannerImageContainer: `h-[50vh] w-screen overflow-hidden flex justify-center items-center`,
-    bannerImage: `w-full object-cover`,
+    bannerImageContainer: `bg-[url('../assets/background.jpg')] h-[50vh] w-screen overflow-hidden flex justify-center items-center`,
+    bannerImage: `w-full object-cover `,
     infoContainer: `w-screen sm:text-center px-4`,
     midRow: `w-full flex justify-center text-white`,
     endRow: `w-full flex justify-end text-white`,
-    profileImg: `w-40 h-40 object-cover rounded-full border-2 border-[#202225] mt-[-4rem]`,
+    profileImg: ` w-40 h-40 object-cover rounded-full border-2 border-[#202225] mt-[-4rem]`,
     socialIconsContainer: `sm:hidden md:flex text-3xl mb-[-2rem]`,
     socialIconsWrapper: `w-44`,
     socialIconsContent: `flex container justify-between text-[1.4rem] border-2 rounded-lg px-2 `,
@@ -32,7 +32,7 @@ const style = {
 
 
 
-const Collection = ()=>{
+const Profile = ()=>{
 
     const { address } = useWeb3();
     const [ userData, setUser ] =  useState({});
@@ -64,7 +64,7 @@ const Collection = ()=>{
         <div className="overflow-hidden">
       <Header />
       <div className={style.bannerImageContainer}>
-        <img
+        <div
           className={style.bannerImage}
         />
       </div>
@@ -72,6 +72,7 @@ const Collection = ()=>{
         <div className={style.midRow}>
           <img
             className={style.profileImg}
+            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
           />
         </div>
         <div className={style.endRow}>
@@ -122,4 +123,4 @@ const Collection = ()=>{
     )
 }
 
-export default Collection;
+export default Profile;
