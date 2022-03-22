@@ -39,21 +39,24 @@ const BlogComponent = () => {
     { !data 
     ? <div>Loading...</div> 
     : data.map((newsItem, index) => { return (
-        <div className="bg-gray-900 h-[500px] w-screen flex justify-center items-center">
-            <div className="bg-white h-[20rem] w-[80%] rounded-xl flex justify-center items-center">
-                <div className="text-center m-8">
-                    <div className="w-[400px]">
-                        <img className="bg-cover " src={newsItem.urlToImage} alt=""/>
+        <div key={index}>
+            <div className="bg-gray-900 h-[500px] w-screen flex justify-center items-center">
+                <div className="bg-white h-[20rem] w-[80%] rounded-xl flex justify-center items-center">
+                    <div className="text-center m-8">
+                        <div className="w-[400px]">
+                            <img className="bg-cover " src={newsItem.urlToImage} alt=""/>
+                        </div>
+                        <h1>{newsItem.author}</h1>
                     </div>
-                    <h1>{newsItem.author}</h1>
-                </div>
-                <div className="mx-4 my-12 p-2">
-                    <h2 className="text-2xl">{newsItem.title}</h2>
-                    <p className="text-justify text-xl">{newsItem.description}</p>
-                    <span className="text-gray-400 text-sm">{newsItem.publishedAt.slice(0,10)}</span>
+                    <div className="mx-4 my-12 p-2">
+                        <h2 className="text-2xl">{newsItem.title}</h2>
+                        <p className="text-justify text-xl">{newsItem.description}</p>
+                        <span className="text-gray-400 text-sm">{newsItem.publishedAt.slice(0,10)}</span>
+                    </div>
                 </div>
             </div>
-        </div>)}
+        </div>
+        )}
     )}
     </>
     )
