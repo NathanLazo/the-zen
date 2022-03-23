@@ -26,9 +26,8 @@ const style = {
     statValue: `text-3xl font-bold w-full flex items-center justify-center`,
     ethLogo: `h-6 mr-2`,
     statName: `text-lg w-full text-center mt-1`,
-    description: `text-[#8a939b] text-xl w-max-1/4 flex-wrap mt-4`,
+    description: `text-[#8a939b] text-xl w-max-1/4 flex-wrap mb-4`,
   };
-
 
 
 
@@ -63,6 +62,8 @@ const Profile = ()=>{
       <>
         <div className="overflow-hidden">
       <Header />
+
+      {/* Profile Images */}
       <div className={style.bannerImageContainer}>
         <div
           className={style.bannerImage}
@@ -75,6 +76,8 @@ const Profile = ()=>{
             src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
           />
         </div>
+
+          {/* Social Icons */}
         <div className={style.endRow}>
           <div className={style.socialIconsContainer}>
             <div className={style.socialIconsWrapper}>
@@ -98,9 +101,8 @@ const Profile = ()=>{
             </div>
           </div>
         </div>
-        <div className={style.midRow}>
-          <div className={style.title}></div>
-        </div>
+        
+        {/* Info-Name */}
         <div className={style.midRow}>
           <div className={style.createdBy}>
             {userData[0]?.name}
@@ -108,15 +110,20 @@ const Profile = ()=>{
           </div>
         </div>
         <div className={style.midRow}>
-          <div className={style.description}></div>
+          <div className={style.description}>{address}</div>
         </div>
       </div>
-      <div className="sm:mx-4 md:mx-[2rem] lg:mx-[10rem]">
+
+
+      {/* NFTs list */}
+      <div className="bg-transparent h-[450px] w-screen">,
         <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          
+
+
         </div>
       </div>
       
+
       <Footer/>
     </div>
     </>

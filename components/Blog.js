@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const BlogComponent = () => {
     var url = 'https://newsapi.org/v2/everything?' +
-    'q=Metaverse&' +
+    'q= Crypto&' +
     'from=2022-03-22&' +
     'sortBy=popularity&' +
     'apiKey=1ec117a742774545bfdc4cb24825d1b3';
@@ -37,23 +37,25 @@ const BlogComponent = () => {
     return (
     <>
     { !data 
-    ? <div>Loading...</div> 
+    ? <div className="text-white">Loading...</div> 
     : data.map((newsItem, index) => { return (
         <div key={index}>
-            <div className="bg-gray-900 h-[500px] w-screen flex justify-center items-center">
-                <div className="bg-white h-[20rem] w-[80%] rounded-xl flex justify-center items-center">
-                    <div className="text-center m-8">
-                        <div className="w-[400px]">
-                            <img className="bg-cover " src={newsItem.urlToImage} alt=""/>
+            <div className="bg-gray-900 h-[450px] w-screen flex justify-center items-center">
+                <Link href={newsItem.url}>
+                    <div className="bg-white h-[22rem] w-[80%] rounded-xl flex justify-center items-center">
+                        <div className="text-center m-8">
+                            <div className="w-[400px]">
+                                <img className="bg-cover" src={newsItem.urlToImage} alt=""/>
+                            </div>
+                            <h1 className="mt-4 text-lg font-semibold">{newsItem.author}</h1>
                         </div>
-                        <h1>{newsItem.author}</h1>
+                        <div className="mx-24 my-12 p-2">
+                            <h2 className="text-2xl font-bold">{newsItem.title}</h2>
+                            <p className="text-justify text-xl">{newsItem.description}</p>
+                            <span className="text-gray-400 text-sm">{newsItem.publishedAt.slice(0,10)}</span>
+                        </div>
                     </div>
-                    <div className="mx-4 my-12 p-2">
-                        <h2 className="text-2xl">{newsItem.title}</h2>
-                        <p className="text-justify text-xl">{newsItem.description}</p>
-                        <span className="text-gray-400 text-sm">{newsItem.publishedAt.slice(0,10)}</span>
-                    </div>
-                </div>
+                </Link>
             </div>
         </div>
         )}

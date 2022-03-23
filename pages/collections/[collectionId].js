@@ -212,7 +212,7 @@ const Collection = ()=>{
       </div>
       <div className="sm:mx-4 md:mx-[2rem] lg:mx-[10rem]">
         <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {nfts.map((nftItem, id) => (
+          {!nfts ? <div className="text-white font-bold text-lg">Loading</div> : nfts.map((nftItem, id) => (
             <NFTCard
               key={id}
               nftItem={nftItem}
