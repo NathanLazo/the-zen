@@ -21,7 +21,7 @@ const style = {
     socialIconsContainer: `sm:hidden md:flex text-3xl mb-[-2rem]`,
     socialIconsWrapper: `w-44`,
     socialIconsContent: `flex container justify-between text-[1.4rem] border-2 rounded-lg px-2 `,
-    socialIcon: `my-2 px-2 hover:text-[#6d3ff8]`,
+    socialIcon: `my-2 px-6 hover:text-[#6d3ff8]`,
     divider: `border-r-2`,
     title: `text-5xl font-bold mb-4`,
     createdBy: `text-lg mb-4`,
@@ -140,10 +140,6 @@ const Profile = ()=>{
                   <AiOutlineTwitter />
                 </a>
                 </Link>
-                <div className={style.divider} />
-                    <div className={style.socialIcon}>
-                        <HiDotsVertical />
-                    </div>
               </div>
             </div>
           </div>
@@ -164,7 +160,7 @@ const Profile = ()=>{
 
       {/* NFTs list */}
       <div className="bg-transparent h-[450px] w-screen">,
-        <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-24">
           {!nfts 
           ?<div className="text-center text-white">Loading</div>
           :nfts.map((nft, index) => { return (
@@ -173,7 +169,7 @@ const Profile = ()=>{
             nftItem={nft}
             title=""
             listings={listings}
-          />
+            />
           )})
           }
         </div>

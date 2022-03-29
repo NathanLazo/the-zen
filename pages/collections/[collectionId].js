@@ -21,7 +21,7 @@ const style = {
     socialIconsContainer: `sm:hidden md:flex text-3xl mb-[-2rem]`,
     socialIconsWrapper: `w-44`,
     socialIconsContent: `flex container justify-between text-[1.4rem] border-2 rounded-lg px-2 `,
-    socialIcon: `my-2 hover:text-[#6d3ff8]`,
+    socialIcon: `my-2 hover:text-[#6d3ff8] px-2`,
     divider: `border-r-2`,
     title: `text-5xl font-bold mb-4`,
     createdBy: `text-lg mb-4`,
@@ -152,10 +152,6 @@ const Collection = ()=>{
                 <div className={style.divider} />
                 <div className={style.socialIcon}>
                   <AiOutlineTwitter />
-                </div>
-                <div className={style.divider} />
-                <div className={style.socialIcon}>
-                  <HiDotsVertical />
                 </div>
               </div>
             </div>
