@@ -5,7 +5,6 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import { MdOutlineAccountBalanceWallet } from 'react-icons/md';
 import theZenLogo from '../assets/TheZen3.png';
 import DropdownMenu from './DropdownMenu';
-const apk = '../static/downloads/TheZenMobile.apk';
 
 const style = {
     wrapper: `bg-[#04111d] w-screen px-[1.2rem] py-[0.8rem]  flex justify-center`,
@@ -24,6 +23,7 @@ const style = {
   }
 
 const Header = () => {
+    const apk = '/static/downloads/TheZenMobile.apk';
     return(
         <div className={style.wrapper}>
             <Link href="/" >
@@ -45,7 +45,9 @@ const Header = () => {
                 {/* <Link href="/">
                     <div className={style.headerItem2}>Stats</div>
                 </Link> */}
-                    <a className={style.headerItem3} download href={apk} >Metaverse</a>
+                <Link download href={apk}>
+                    <a className={style.headerItem3}>Metaverse</a>
+                </Link>
                 {/* <Link href="/">
                     <div className={style.headerItem4}>Create</div>
                 </Link> */}
