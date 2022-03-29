@@ -159,8 +159,8 @@ const Profile = ()=>{
 
 
       {/* NFTs list */}
-      <div className="bg-transparent h-[450px] w-screen">,
-        <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-24">
+      <div className="bg-transparent w-screen">,
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-18">
           {!nfts 
           ?<div className="text-center text-white">Loading</div>
           :nfts.map((nft, index) => { return (

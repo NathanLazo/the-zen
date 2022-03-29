@@ -42,7 +42,7 @@ const BlogComponent = () => {
         <div key={index}>
             <div className="bg-gray-900 h-[450px] w-screen flex justify-center items-center">
                 <Link href={newsItem.url}>
-                    <div className="bg-white h-[22rem] w-[80%] rounded-xl flex justify-center items-center">
+                    <div className="shadow-2xl shadow-[#5330bd] bg-white h-[22rem] w-[80%] rounded-xl flex justify-center items-center ">
                         <div className="text-center m-8">
                             <div className="w-[400px]">
                                 <img className="bg-cover" src={newsItem.urlToImage} alt=""/>
