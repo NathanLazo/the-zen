@@ -6,8 +6,6 @@ import BlogComponent from "../components/Blog";
 
 
 const blog = () => {
-
-let element
     return (
         <>
         <Header/>
